@@ -26,7 +26,7 @@ body{
 #head h1{
     margin: 0px;
     padding: 5px;
-    font-weight: 700px;
+    font-weight: 700;
 }
 
 /*Formatting the Footer*/
@@ -64,7 +64,7 @@ body{
     min-height: 400px;
 }
 
-#adding h1{
+#adding h2{
     font-weight: 700;
     font-size: 50px;
 }
