@@ -22,6 +22,8 @@ const del = document.querySelectorAll(".delete");
 let sum = 0;
 let allExpenses = [ ];
 
+//adding dark mode code
+const toggle = document.querySelector("#dark");
 
 //Function Time!!!
 function getsum(){
@@ -55,6 +57,7 @@ function addExpense(e){
 
     if(isNaN(price)){
         window.alert("Please Enter a number!");
+        document.getElementById("frm").reset();
     }
     else{
         allExpenses.unshift({name: word, value: price});
@@ -110,6 +113,16 @@ function update(){
 }
 function start(){
     submit.addEventListener("click",addExpense);
+    toggle.addEventListener("click",()=>{
+        if(toggle.textContent == "☀"){
+            document.body.classList.toggle("dark");
+            toggle.textContent = "🌑";
+        }
+        else{
+            document.body.classList.toggle("dark");
+            toggle.textContent = "☀";
+        }
+    })
     getExpenses();
     update();
 }
