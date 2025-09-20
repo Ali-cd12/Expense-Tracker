@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title> <!--Renamed Webpage-->
+
+    <link rel="icon" href="images\favicon.png"> <!--Added a favicon-->
+
+    <!--Linking a CSS StyleSheet-->
+    <link rel="stylesheet" href="expenseTracker.css">
+
+    <!--Using Google fonts API for font Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header of the webpage-->
+    <header id="head">
+
+        <!--Text in the header-->
+        <h1>Expense Tracker</h1>
+    </header>
+
+    <!--Adding Expense Section-->
+    <section id="adding">
+
+        <h1>Add a new Expense</h1>
+
+        <!--Adding Expense Form-->
+        <form id="frm">
+            <label for="expense" class="exp">Expense:</label>
+            <input id="expense" required placeholder="Rent, Utilities etc" class="exp1">
+            <br>
+
+            <label for="cost" class="exp">Cost:</label>
+            <input id="cost" required placeholder="300" class="exp1">
+            <br>
+
+            <button id="submit">ADD EXPENSE</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!--Expenses List-->
+    <h1 id="listheading">Expenses</h1>
+
+    <div id="listSection">
+        <div class="cards" id="tittle">
+            <p class="item">Expenses</p>
+            <p class="price">Cost</p>
+        </div>
+    </div>
+
+    <!--Total Section-->
+    <h1 id="total">Total: 0 $</h1>
+    <hr>
+
+    <!--Footer of the webpage Webpage-->
+    <footer id="foot">
+
+        <p>Mujtaba Ahmed ©2025</p>
+
+        <a href="mailto:" target="_blank" title="Contact with Email">
+            <img src="images/email.png" alt="Icon of Email">
+        </a>
+
+        <a href="https://www.linkedin.com/in/mujtabaahmedux/" target="_blank" title="Link in LinkedIn">
+            <img src="images/ln.png" alt="Icon of LinkedIn">
+        </a>
+
+        <a href="https://github.com/Ali-cd12" target="_blank" title="See more on GitHub">
+            <img src="images/git.svg" alt="Icon of GitHub">
+        </a>
+    </footer>
+
+    <!--Linking a JavaScript File-->
+    <script src="expenseTracker.js"></script>
+</body>
+</html>
